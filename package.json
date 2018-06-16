@@ -19,7 +19,6 @@
     "lint": "standard"
   },
   "dependencies": {
-    "invariant": "2.2.2",
     "lodash.has": "^4.5.2",
     "lodash.isempty": "^4.4.0",
     "lodash.isinteger": "^4.0.4"
