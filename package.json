@@ -20,7 +20,9 @@
   },
   "dependencies": {
     "invariant": "2.2.2",
-    "lodash": "4.17.4"
+    "lodash.has": "^4.5.2",
+    "lodash.isempty": "^4.4.0",
+    "lodash.isinteger": "^4.0.4"
   },
   "devDependencies": {
     "jest": "20.0.4",
