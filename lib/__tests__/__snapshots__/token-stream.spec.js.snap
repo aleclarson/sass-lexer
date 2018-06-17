@@ -1,753 +1,385 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`#next consumes returns and the next token 1`] = `
-Object {
-  "next": Object {
-    "column": 5,
-    "cursor": 5,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "identifier",
-  "value": "hello",
-}
+Array [
+  "identifier",
+  "hello",
+  1,
+  0,
+]
 `;
 
 exports[`#next consumes returns and the next token 2`] = `
-Object {
-  "next": Object {
-    "column": 6,
-    "cursor": 6,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 5,
-    "cursor": 5,
-    "line": 1,
-  },
-  "type": "space",
-  "value": " ",
-}
+Array [
+  "space",
+  " ",
+  1,
+  5,
+]
 `;
 
 exports[`#next tokens atrule works 1`] = `
-Object {
-  "next": Object {
-    "column": 6,
-    "cursor": 6,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "atrule",
-  "value": "mixin",
-}
+Array [
+  "atrule",
+  "mixin",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens comment single comment 1`] = `
-Object {
-  "next": Object {
-    "column": 8,
-    "cursor": 8,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "comment",
-  "value": " Hello",
-}
+Array [
+  "comment",
+  " Hello",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens comment single comment 2`] = `
-Object {
-  "next": Object {
-    "column": 18,
-    "cursor": 18,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "comment",
-  "value": "* Hello World ",
-}
+Array [
+  "comment",
+  "* Hello World ",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens hex 3 digit (trailing invalid) 1`] = `
-Object {
-  "next": Object {
-    "column": 4,
-    "cursor": 4,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "color_hex",
-  "value": "FF0",
-}
+Array [
+  "color_hex",
+  "FF0",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens hex 3 digit lowercase 1`] = `
-Object {
-  "next": Object {
-    "column": 4,
-    "cursor": 4,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "color_hex",
-  "value": "ff0",
-}
+Array [
+  "color_hex",
+  "ff0",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens hex 3 digit uppercase 1`] = `
-Object {
-  "next": Object {
-    "column": 4,
-    "cursor": 4,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "color_hex",
-  "value": "FF0",
-}
+Array [
+  "color_hex",
+  "FF0",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens hex 6 digit lowercase 1`] = `
-Object {
-  "next": Object {
-    "column": 7,
-    "cursor": 7,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "color_hex",
-  "value": "ff0099",
-}
+Array [
+  "color_hex",
+  "ff0099",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens hex 6 digit numbers 1`] = `
-Object {
-  "next": Object {
-    "column": 7,
-    "cursor": 7,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "color_hex",
-  "value": "000000",
-}
+Array [
+  "color_hex",
+  "000000",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens hex 6 digit uppercase 1`] = `
-Object {
-  "next": Object {
-    "column": 7,
-    "cursor": 7,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "color_hex",
-  "value": "FF0099",
-}
+Array [
+  "color_hex",
+  "FF0099",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens identifier checks for valid starting characters 1`] = `
-Object {
-  "next": Object {
-    "column": 6,
-    "cursor": 6,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "identifier",
-  "value": "_hello",
-}
+Array [
+  "identifier",
+  "_hello",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens identifier ignores invalid starting characters 1`] = `
-Object {
-  "next": Object {
-    "column": 1,
-    "cursor": 1,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "number",
-  "value": "0",
-}
+Array [
+  "number",
+  "0",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens number float (leading decimal) 1`] = `
-Object {
-  "next": Object {
-    "column": 2,
-    "cursor": 2,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "number",
-  "value": ".3",
-}
+Array [
+  "number",
+  ".3",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens number float 1`] = `
-Object {
-  "next": Object {
-    "column": 3,
-    "cursor": 3,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "number",
-  "value": "3.0",
-}
+Array [
+  "number",
+  "3.0",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens number integer 1`] = `
-Object {
-  "next": Object {
-    "column": 1,
-    "cursor": 1,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "number",
-  "value": "3",
-}
+Array [
+  "number",
+  "3",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens operator + 1`] = `
-Object {
-  "next": Object {
-    "column": 1,
-    "cursor": 1,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "operator",
-  "value": "+",
-}
+Array [
+  "operator",
+  "+",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens operator non-repeatable 1`] = `
-Object {
-  "next": Object {
-    "column": 1,
-    "cursor": 1,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "operator",
-  "value": "+",
-}
+Array [
+  "operator",
+  "+",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens operator repeatable 1`] = `
-Object {
-  "next": Object {
-    "column": 2,
-    "cursor": 2,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "operator",
-  "value": "&&",
-}
+Array [
+  "operator",
+  "&&",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens operator repeatable followed by non-repeatable 1`] = `
-Object {
-  "next": Object {
-    "column": 1,
-    "cursor": 1,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "operator",
-  "value": "&",
-}
+Array [
+  "operator",
+  "&",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens punctuation { 1`] = `
-Object {
-  "next": Object {
-    "column": 1,
-    "cursor": 1,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "punctuation",
-  "value": "{",
-}
+Array [
+  "punctuation",
+  "{",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens sink 1 1`] = `
 Array [
-  Object {
-    "next": Object {
-      "column": 1,
-      "cursor": 1,
-      "line": 1,
-    },
-    "start": Object {
-      "column": 0,
-      "cursor": 0,
-      "line": 1,
-    },
-    "type": "punctuation",
-    "value": "(",
-  },
-  Object {
-    "next": Object {
-      "column": 5,
-      "cursor": 5,
-      "line": 1,
-    },
-    "start": Object {
-      "column": 1,
-      "cursor": 1,
-      "line": 1,
-    },
-    "type": "variable",
-    "value": "var",
-  },
-  Object {
-    "next": Object {
-      "column": 6,
-      "cursor": 6,
-      "line": 1,
-    },
-    "start": Object {
-      "column": 5,
-      "cursor": 5,
-      "line": 1,
-    },
-    "type": "punctuation",
-    "value": ")",
-  },
+  Array [
+    "punctuation",
+    "(",
+    1,
+    0,
+  ],
+  Array [
+    "variable",
+    "var",
+    1,
+    1,
+  ],
+  Array [
+    "punctuation",
+    ")",
+    1,
+    5,
+  ],
 ]
 `;
 
 exports[`#next tokens sink 2 1`] = `
 Array [
-  Object {
-    "next": Object {
-      "column": 9,
-      "cursor": 9,
-      "line": 1,
-    },
-    "start": Object {
-      "column": 0,
-      "cursor": 0,
-      "line": 1,
-    },
-    "type": "comment",
-    "value": " ($var)",
-  },
-  Object {
-    "next": Object {
-      "column": 0,
-      "cursor": 10,
-      "line": 2,
-    },
-    "start": Object {
-      "column": 9,
-      "cursor": 9,
-      "line": 1,
-    },
-    "type": "space",
-    "value": "
+  Array [
+    "comment",
+    " ($var)",
+    1,
+    0,
+  ],
+  Array [
+    "space",
+    "
 ",
-  },
-  Object {
-    "next": Object {
-      "column": 6,
-      "cursor": 16,
-      "line": 2,
-    },
-    "start": Object {
-      "column": 0,
-      "cursor": 10,
-      "line": 2,
-    },
-    "type": "atrule",
-    "value": "mixin",
-  },
-  Object {
-    "next": Object {
-      "column": 7,
-      "cursor": 17,
-      "line": 2,
-    },
-    "start": Object {
-      "column": 6,
-      "cursor": 16,
-      "line": 2,
-    },
-    "type": "space",
-    "value": " ",
-  },
-  Object {
-    "next": Object {
-      "column": 14,
-      "cursor": 24,
-      "line": 2,
-    },
-    "start": Object {
-      "column": 7,
-      "cursor": 17,
-      "line": 2,
-    },
-    "type": "identifier",
-    "value": "myMixin",
-  },
+    1,
+    9,
+  ],
+  Array [
+    "atrule",
+    "mixin",
+    2,
+    0,
+  ],
+  Array [
+    "space",
+    " ",
+    2,
+    6,
+  ],
+  Array [
+    "identifier",
+    "myMixin",
+    2,
+    7,
+  ],
 ]
 `;
 
 exports[`#next tokens space multiple spaces 1`] = `
-Object {
-  "next": Object {
-    "column": 4,
-    "cursor": 4,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "space",
-  "value": "    ",
-}
+Array [
+  "space",
+  "    ",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens space single space 1`] = `
-Object {
-  "next": Object {
-    "column": 1,
-    "cursor": 1,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "space",
-  "value": " ",
-}
+Array [
+  "space",
+  " ",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens space whitespace characters 1`] = `
-Object {
-  "next": Object {
-    "column": 3,
-    "cursor": 5,
-    "line": 3,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "space",
-  "value": "
+Array [
+  "space",
+  "
 
 	  ",
-}
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens string double quotes 1`] = `
-Object {
-  "next": Object {
-    "column": 7,
-    "cursor": 7,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "string_double",
-  "value": "hello",
-}
+Array [
+  "string",
+  "hello",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens string escaped characters 1`] = `
-Object {
-  "next": Object {
-    "column": 17,
-    "cursor": 17,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "string_double",
-  "value": "hello \\\\\\"world\\\\\\"",
-}
+Array [
+  "string",
+  "hello \\\\\\"world\\\\\\"",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens string preserves escape characters 1`] = `
 Array [
-  Object {
-    "next": Object {
-      "column": 5,
-      "cursor": 5,
-      "line": 1,
-    },
-    "start": Object {
-      "column": 0,
-      "cursor": 0,
-      "line": 1,
-    },
-    "type": "identifier",
-    "value": "token",
-  },
-  Object {
-    "next": Object {
-      "column": 6,
-      "cursor": 6,
-      "line": 1,
-    },
-    "start": Object {
-      "column": 5,
-      "cursor": 5,
-      "line": 1,
-    },
-    "type": "punctuation",
-    "value": "(",
-  },
-  Object {
-    "next": Object {
-      "column": 8,
-      "cursor": 8,
-      "line": 1,
-    },
-    "start": Object {
-      "column": 6,
-      "cursor": 6,
-      "line": 1,
-    },
-    "type": "string_single",
-    "value": "",
-  },
-  Object {
-    "next": Object {
-      "column": 9,
-      "cursor": 9,
-      "line": 1,
-    },
-    "start": Object {
-      "column": 8,
-      "cursor": 8,
-      "line": 1,
-    },
-    "type": "operator",
-    "value": "+",
-  },
-  Object {
-    "next": Object {
-      "column": 14,
-      "cursor": 14,
-      "line": 1,
-    },
-    "start": Object {
-      "column": 9,
-      "cursor": 9,
-      "line": 1,
-    },
-    "type": "identifier",
-    "value": "myVar",
-  },
-  Object {
-    "next": Object {
-      "column": 15,
-      "cursor": 15,
-      "line": 1,
-    },
-    "start": Object {
-      "column": 14,
-      "cursor": 14,
-      "line": 1,
-    },
-    "type": "operator",
-    "value": "+",
-  },
-  Object {
-    "next": Object {
-      "column": 32,
-      "cursor": 32,
-      "line": 1,
-    },
-    "start": Object {
-      "column": 15,
-      "cursor": 15,
-      "line": 1,
-    },
-    "type": "string_single",
-    "value": "font(\\\\'world\\\\')",
-  },
-  Object {
-    "next": Object {
-      "column": 33,
-      "cursor": 33,
-      "line": 1,
-    },
-    "start": Object {
-      "column": 32,
-      "cursor": 32,
-      "line": 1,
-    },
-    "type": "punctuation",
-    "value": ")",
-  },
+  Array [
+    "identifier",
+    "token",
+    1,
+    0,
+  ],
+  Array [
+    "punctuation",
+    "(",
+    1,
+    5,
+  ],
+  Array [
+    "string",
+    "",
+    1,
+    6,
+  ],
+  Array [
+    "operator",
+    "+",
+    1,
+    8,
+  ],
+  Array [
+    "identifier",
+    "myVar",
+    1,
+    9,
+  ],
+  Array [
+    "operator",
+    "+",
+    1,
+    14,
+  ],
+  Array [
+    "string",
+    "font(\\\\'world\\\\')",
+    1,
+    15,
+  ],
+  Array [
+    "punctuation",
+    ")",
+    1,
+    32,
+  ],
 ]
 `;
 
 exports[`#next tokens string single quotes 1`] = `
-Object {
-  "next": Object {
-    "column": 7,
-    "cursor": 7,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "string_single",
-  "value": "hello",
-}
+Array [
+  "string",
+  "hello",
+  1,
+  0,
+]
 `;
 
 exports[`#next tokens variable works 1`] = `
-Object {
-  "next": Object {
-    "column": 5,
-    "cursor": 5,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "variable",
-  "value": "size",
-}
+Array [
+  "variable",
+  "size",
+  1,
+  0,
+]
 `;
 
 exports[`#peek returns the current token 1`] = `
-Object {
-  "next": Object {
-    "column": 5,
-    "cursor": 5,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 0,
-    "cursor": 0,
-    "line": 1,
-  },
-  "type": "identifier",
-  "value": "hello",
-}
+Array [
+  "identifier",
+  "hello",
+  1,
+  0,
+]
 `;
 
 exports[`#peek returns the current token with an offset 1`] = `
-Object {
-  "next": Object {
-    "column": 6,
-    "cursor": 6,
-    "line": 1,
-  },
-  "start": Object {
-    "column": 5,
-    "cursor": 5,
-    "line": 1,
-  },
-  "type": "space",
-  "value": " ",
-}
+Array [
+  "space",
+  " ",
+  1,
+  5,
+]
 `;
