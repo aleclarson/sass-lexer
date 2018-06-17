@@ -10,9 +10,6 @@
     "test": "jest",
     "lint": "standard"
   },
-  "dependencies": {
-    "lodash.isempty": "^4.4.0"
-  },
   "devDependencies": {
     "jest": "20.0.4",
     "standard": "10.0.1"
