@@ -34,7 +34,7 @@ Object {
 }
 `;
 
-exports[`#next tokens atkeyword works 1`] = `
+exports[`#next tokens atrule works 1`] = `
 Object {
   "next": Object {
     "column": 6,
@@ -46,7 +46,7 @@ Object {
     "cursor": 0,
     "line": 1,
   },
-  "type": "atkeyword",
+  "type": "atrule",
   "value": "mixin",
 }
 `;
@@ -63,7 +63,7 @@ Object {
     "cursor": 0,
     "line": 1,
   },
-  "type": "comment_singleline",
+  "type": "comment",
   "value": " Hello",
 }
 `;
@@ -80,7 +80,7 @@ Object {
     "cursor": 0,
     "line": 1,
   },
-  "type": "comment_multiline",
+  "type": "comment",
   "value": "* Hello World ",
 }
 `;
@@ -340,7 +340,7 @@ Object {
 }
 `;
 
-exports[`#next tokens puctuation { 1`] = `
+exports[`#next tokens punctuation { 1`] = `
 Object {
   "next": Object {
     "column": 1,
@@ -417,7 +417,7 @@ Array [
       "cursor": 0,
       "line": 1,
     },
-    "type": "comment_singleline",
+    "type": "comment",
     "value": " ($var)",
   },
   Object {
@@ -446,7 +446,7 @@ Array [
       "cursor": 10,
       "line": 2,
     },
-    "type": "atkeyword",
+    "type": "atrule",
     "value": "mixin",
   },
   Object {
@@ -749,15 +749,5 @@ Object {
   },
   "type": "space",
   "value": " ",
-}
-`;
-
-exports[`returns an TokenStream 1`] = `
-Object {
-  "all": [Function],
-  "eof": [Function],
-  "err": [Function],
-  "next": [Function],
-  "peek": [Function],
 }
 `;

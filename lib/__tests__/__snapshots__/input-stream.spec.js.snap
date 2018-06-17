@@ -7,13 +7,3 @@ Object {
   "line": 1,
 }
 `;
-
-exports[`returns an new InputStream 1`] = `
-Object {
-  "eof": [Function],
-  "err": [Function],
-  "next": [Function],
-  "peek": [Function],
-  "position": [Function],
-}
-`;
