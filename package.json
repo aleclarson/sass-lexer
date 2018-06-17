@@ -1,8 +1,8 @@
 {
-  "name": "scss-parser",
+  "name": "sass-lexer",
   "version": "1.0.0",
   "main": "lib/index.js",
-  "repository": "https://github.com/aleclarson/scss-parser.git",
+  "repository": "https://github.com/aleclarson/sass-lexer.git",
   "engines": {
     "node": ">=6.0.0"
   },
