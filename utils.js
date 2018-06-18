@@ -33,5 +33,5 @@ module.exports = {
   notType,
   notValue,
   assertType,
-  assertValue,
+  assertValue
 }
