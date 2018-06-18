@@ -21,6 +21,8 @@ tokens.eof();           // => boolean
 tokens.err('oh crap');
 ```
 
+The `next` and `peek` methods return `null` if no more tokens exist.
+
 Tokens are arrays of the following shape:
 - `0: string` type
 - `1: string` value
