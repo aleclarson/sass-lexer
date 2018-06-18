@@ -44,3 +44,28 @@ while (!tokens.eof()) {
 
 The values of `tok[1].length` and `tok[2]` are *not* always equal, so be sure
 to use `tok[2]` when calculating the character offset.
+
+### Parser utils
+
+```js
+const utils = require('sass-lexer/utils');
+
+// Return true if `tok` is truthy and `tok[0]` equals the given string.
+utils.isType(tok, 'space');
+
+// Return true if `tok` is truthy and `tok[1]` equals the given string.
+utils.isValue(tok, ':');
+
+// Return true if `tok` is truthy and `tok[0]` is not the given string.
+utils.notType(tok, 'space');
+
+// Return true if `tok` is truthy and `tok[1]` is not the given string.
+utils.notValue(tok, ':');
+
+// Throw an error if `tok` is falsy or `tok[0]` is not the given string.
+utils.assertType(tok, 'space');
+
+// Throw an error if `tok` is falsy or `tok[1]` is not the given string.
+utils.assertValue(tok, ':');
+```
+
