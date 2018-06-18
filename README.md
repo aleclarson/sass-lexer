@@ -47,7 +47,20 @@ while (!tokens.eof()) {
 The values of `tok[1].length` and `tok[2]` are *not* always equal, so be sure
 to use `tok[2]` when calculating the character offset.
 
-### Parser utils
+## Token types
+
+- `atrule` (does not include `@` in the value)
+- `color_hex` (does not include `#` in the value)
+- `comment` (does not include `//` or `/*` or `*/` in the value)
+- `identifier`
+- `number` (does not include units like `px` in the value)
+- `operator`
+- `punctuation`
+- `space` (mix of ` ` and `\t` and `\n` in the value)
+- `string` (does not include `"` or `'` in the value)
+- `variable` (does not include `$` in the value)
+
+## Parser utils
 
 ```js
 const utils = require('sass-lexer/utils');
@@ -70,4 +83,3 @@ utils.assertType(tok, 'space');
 // Throw an error if `tok` is falsy or `tok[1]` is not the given string.
 utils.assertValue(tok, ':');
 ```
-
